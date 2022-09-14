@@ -1,0 +1,32 @@
+# meus-programas-de-pyton-
+aqui estão meus arquivos de python feitos durante a minha fase da UFABC.
+
+#def medias_historicos(historicos: [[float]])
+
+def alunos(n: int ,m: int):
+    matriz = []
+    for i in range(n):
+        matriz.append([])
+        for j in range(m):
+            nota = float(input('digite a nota do aluno:'))                      
+            
+            matriz[i].append(nota)
+    print(media(matriz))
+def media(matriz: [[int]]):
+    aluno = []
+    n = 0
+    if len(matriz) < 1:
+        return None
+    for i in range(len(matriz)):
+        n=0
+        for j in range(len(matriz[i])):
+            n += matriz[i][j]
+        n = (n / (len(matriz[i])))
+        print(n)
+        aluno.append(n)
+            
+    return(aluno)
+    
+    
+    
+    
